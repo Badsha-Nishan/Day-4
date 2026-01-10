@@ -23,9 +23,19 @@ body {
   font-size: clamp(1.5rem, 2vw, 1.8rem);
   font-weight: 500;
   cursor: pointer;
+  border: none;
+}
+.vision-section .btn-primary {
+  background-color: #5490f5;
+}
+.vision-card:nth-child(2) .btn-primary {
+  background-color: #09a15c;
+}
+.vision-card:nth-child(3) .btn-primary {
+  background-color: #ffc239;
 }
 .btn-primary:hover {
-  background-color: transparent;
+  background-color: transparent !important;
   border: 1px solid gray;
   color: black;
 }
@@ -85,39 +95,76 @@ nav button:hover {
   max-width: 474px;
 }
 
-/* Pillars Section */
+/* Pillars and Vision Section */
 
-.card{
-    display: flex;
-    gap: 24px;
-    margin-bottom: 80px;
+.card,
+.vision-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 80px;
 }
-.pillars h3 {
+.vision-cards {
+  margin-bottom: 32px;
+}
+.pillars h3,
+.vision-section h2 {
   font-size: clamp(3rem, 4vw, 4rem);
   font-weight: bold;
   margin-top: 80px;
   margin-bottom: 32px;
 }
 
-.cards {
+.cards,
+.vision-card {
   padding: 24px;
   border-radius: 16px;
   background-color: #fff;
   border: 1px solid #0e0e0e15;
+  transition: 0.3s;
 }
-.cards img {
+.vision-card {
+  background-color: #5490f550;
+}
+.vision-card:nth-child(2) {
+  background-color: #c6e4d6;
+}
+.vision-card:nth-child(3) {
+  background-color: #f7ebcf;
+}
+.cards:hover,
+.vision-card:hover {
+  background-color: lightgray;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.128);
+}
+.cards img,
+.vision-cards img {
   width: 64px;
   height: 64px;
   margin-bottom: 24px;
 }
-.cards h4 {
+.cards h4,
+.vision-cards h4 {
   font-size: clamp(1.7rem, 3vw, 2rem);
   font-weight: bold;
   color: #0e0e0e80;
   margin-bottom: 12px;
 }
-.cards p {
+.cards p,
+.vision-cards p,
+.vision-section p {
   font-size: clamp(1.4rem, 2vw, 1.6rem);
   color: #0e0e0e70;
   line-height: 24px;
+  margin-bottom: 20px;
+}
+.quote {
+  padding: 48px 24px;
+  border-radius: 16px;
+  background: url(./assets/quote-bg.png) 24px 24px no-repeat, #fff;
+}
+.quote h4 {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 5px;
 }
