@@ -24,6 +24,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   border: none;
+  transition: all 0.2s ease;
 }
 .vision-section .btn-primary {
   background-color: #5490f5;
@@ -109,7 +110,8 @@ nav button:hover {
 .pillars h3,
 .vision-section h2,
 .opinion h2,
-.news-section > h2 {
+.news-section > h2,
+.donate-section h2 {
   font-size: clamp(3rem, 4vw, 4rem);
   font-weight: bold;
   margin-top: 80px;
@@ -154,7 +156,8 @@ nav button:hover {
 .cards p,
 .vision-cards p,
 .vision-section p,
-.news-section p {
+.news-section p,
+.donate-section p {
   font-size: clamp(1.4rem, 2vw, 1.6rem);
   color: #0e0e0e70;
   line-height: 24px;
@@ -234,6 +237,41 @@ nav button:hover {
 .text img {
   margin-bottom: 12px;
 }
-.reverse{
+.reverse {
   flex-direction: row-reverse;
 }
+
+/* Donate Section */
+
+.donate-section {
+  padding: 0 90px;
+}
+.donate-center {
+  text-align: center;
+}
+ul {
+  display: flex;
+  gap: 24px;
+  margin: 12px 0 32px;
+}
+ul li {
+  color: #0e0e0e80;
+  list-style: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+ul li:hover {
+  background-color: #c6e4d6;
+}
+.other-amount {
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  color: #0e0e0e70;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Subscribe Section */
