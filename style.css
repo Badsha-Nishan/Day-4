@@ -107,7 +107,8 @@ nav button:hover {
   margin-bottom: 32px;
 }
 .pillars h3,
-.vision-section h2 {
+.vision-section h2,
+.opinion h2 {
   font-size: clamp(3rem, 4vw, 4rem);
   font-weight: bold;
   margin-top: 80px;
@@ -167,4 +168,43 @@ nav button:hover {
   font-weight: 500;
   margin-top: 12px;
   margin-bottom: 5px;
+}
+.table {
+  background-color: #fff;
+  padding: 24px;
+  margin: 30px;
+  border-radius: 10px;
+}
+.th {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px;
+  background-color: #c6e4d6;
+}
+.th p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.td p {
+  padding: 36px 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.td .bdr {
+  padding: 36px;
+  border-left: 1px solid gray;
+}
+.td .bdr button {
+  background-color: #c6e4d6;
+  padding: 12px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tbody {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-top: none;
 }
