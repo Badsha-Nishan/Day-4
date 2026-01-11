@@ -95,7 +95,7 @@ nav button:hover {
   max-width: 474px;
 }
 
-/* Pillars and Vision Section */
+/* Pillars, Vision and Opinion Section */
 
 .card,
 .vision-cards {
@@ -108,7 +108,8 @@ nav button:hover {
 }
 .pillars h3,
 .vision-section h2,
-.opinion h2 {
+.opinion h2,
+.news-section > h2 {
   font-size: clamp(3rem, 4vw, 4rem);
   font-weight: bold;
   margin-top: 80px;
@@ -152,7 +153,8 @@ nav button:hover {
 }
 .cards p,
 .vision-cards p,
-.vision-section p {
+.vision-section p,
+.news-section p {
   font-size: clamp(1.4rem, 2vw, 1.6rem);
   color: #0e0e0e70;
   line-height: 24px;
@@ -172,7 +174,6 @@ nav button:hover {
 .table {
   background-color: #fff;
   padding: 24px;
-  margin: 30px;
   border-radius: 10px;
 }
 .th {
@@ -207,4 +208,32 @@ nav button:hover {
   justify-content: space-between;
   border: 1px solid gray;
   border-top: none;
+}
+
+/* News Section */
+
+.news-content {
+  border-radius: 24px;
+  background-color: #fff;
+  padding: 48px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+.news-content .img img {
+  border-radius: 24px;
+}
+.text h2 {
+  color: #0e0e0e80;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.text img {
+  margin-bottom: 12px;
+}
+.reverse{
+  flex-direction: row-reverse;
 }
